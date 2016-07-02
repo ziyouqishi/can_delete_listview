@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <HorizontalScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+         android:scrollbars="none"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="#FFFDFDFE"
+            android:orientation="horizontal"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/fkq"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/image"
+                    android:layout_alignBottom="@+id/image"
+                    android:layout_toRightOf="@+id/image"
+                    android:layout_marginLeft="15dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hello_world"
+                        android:textSize="23sp"
+                        android:textColor="@color/bright_foreground_material_light"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="How are you?"
+                        android:textSize="24sp"
+                        android:textColor="#FF4535FF"
+                        android:layout_alignParentBottom="true"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/yesterday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="yesterday"
+                        android:textSize="19sp"
+                        android:textColor="#FF7F7F80"
+                        android:layout_alignParentRight="true"
+                        android:padding="10dp"
+                        />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="30dp"
+                    android:text="置顶"
+                    android:textColor="#FFF"
+                    android:textSize="20sp"
+                    android:background="#FFC6C6CC"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="30dp"
+                    android:textColor="#FFF"
+                    android:textSize="20sp"
+                    android:text="标为已读"
+                    android:background="#FFFD9C01"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="30dp"
+                    android:textColor="#FFF"
+                    android:textSize="20sp"
+                    android:text="删除"
+                    android:background="#FFFD3A30"
+                    android:autoText="false" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+

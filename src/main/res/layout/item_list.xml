@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget.SwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/line"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFDFDFE"
+    android:orientation="horizontal"
+   >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fkq"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/image"
+            android:layout_alignBottom="@+id/image"
+            android:layout_toRightOf="@+id/image"
+            android:layout_marginLeft="15dp"
+            >
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hello_world"
+                android:textSize="23sp"
+                android:textColor="@color/bright_foreground_material_light"
+
+                />
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How are you?"
+                android:textSize="24sp"
+                android:textColor="#FF4535FF"
+                android:layout_alignParentBottom="true"
+
+                />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="yesterday"
+                android:textSize="19sp"
+                android:textColor="#FF7F7F80"
+               android:layout_alignParentRight="true"
+                android:padding="10dp"
+
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/zhiding"
+            android:layout_width="66.5dp"
+            android:layout_height="match_parent"
+            android:text="置顶"
+            android:textColor="#FFF"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:background="#FFC6C6CC"/>
+        <TextView
+            android:id="@+id/biaojiweiyidu"
+            android:layout_width="66.5dp"
+            android:layout_height="match_parent"
+            android:textColor="#FFF"
+            android:textSize="17sp"
+            android:text="已读"
+            android:gravity="center"
+            android:background="#FFFD9C01"/>
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="66.5dp"
+            android:layout_height="match_parent"
+            android:textColor="#FFF"
+            android:textSize="17sp"
+            android:text="删除"
+            android:gravity="center"
+            android:background="#FFFD3A30"
+            android:autoText="false" />
+
+    </LinearLayout>
+
+
+
+
+</widget.SwipeLayout>
